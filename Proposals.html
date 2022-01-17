@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<header>
+</header>
+<div class="p-3 mb-2  text-white" style="background-color: #70C3DD;">
+    <img src="full-logo.png" alt="">
+</div>
+
+<body>
+    <div class="text-center container">
+        <span>This page is a test, to know your opinion and feedback about Proposals module. </span>
+        <br>
+        <a href="data.html" class="btn btn-success -sm">See proposals </a>
+    </div>
+
+    <form>
+        <div class="m-4">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-bs-toggle="tab">Information address</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link" data-bs-toggle="tab">Information place</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active container text-center" id="home">
+                    <h1 class="mt-2">Basic Information</h1>
+                    <label><b>Shipping Address:</b>
+                        <input type="text" name="" id="shipping" class="" required placeholder="Example: Wood-Ridge NJ 07075">
+                    </label>
+                    <br>
+                    <label for="customer"><b>Is this an existing costumer? </b></label>
+                    <label>Yes
+                        <input type="radio" name="customer" value="si" id="siCustomer" onchange="propertyName()"
+                            required>
+                    </label>
+                    <label>No
+                        <input type="radio" name="customer" value="no" id="noCustomer" onchange="propertyName()">
+                    </label>
+                    <div id="propertyName"></div>
+                    <br>
+                    <div id="nameProperty"></div>
+                    <div id="selectCustomer"></div>
+                    <div id="selectProperty"></div>
+                    <label>Unit
+                        <input type="radio" name="a" value="si" id="siUnit" onchange="unit()" required>
+                    </label>
+                    <label>Common area
+                        <input type="radio" name="a" value="no" id="noUnit" onchange="unit()">
+                    </label>
+                    <div id="unitNumber"></div>
+                    <div id="specific"></div>
+                    <div id="specificArea"></div>
+                    <label>Request description
+                        <br> <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </label>
+                    <br>
+                    <a class="btn btn-info">Next</a>
+                </div>
+    </form>
+
+    <div class="tab-pane fade" id="profile">
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" class="btn btn-info" href="#1">Painting</a></li>
+                <li><a data-toggle="tab" class="btn btn-info" href="#2">Flooring</a></li>
+                <li><a data-toggle="tab" class="btn btn-info" href="#3">Cleaning</a></li>
+                <li><a data-toggle="tab" class="btn btn-info" href="#4">Handyman</a></li>
+                <li><a data-toggle="tab" class="btn btn-info" href="#5">Photos and videos</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="1" class="tab-pane fade in active text-center">
+                    <form>
+                        <h3>PAINTING</h3>
+                        <label for="dammage">Water dammage?</label>
+                        <label>Yes
+                        <input type="radio" name="dammage" value="si" id="sidammage" onchange="dam()" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="dammage" value="no" id="nodammage" onchange="dam()">
+                    </label>
+                        <br>
+                        <div id="visible"></div>
+                        <label><b>Total square footage: </b>
+                        <input type="number" name="" id="" required placeholder="2500">
+                    </label>
+                        <div id="unitPlace"></div>
+                        <div id="bedrooms"></div>
+                        <div id="measures"></div>
+                        <label> <b> High ceiling?: </b></label>
+                        <label>Yes
+                        <input type="radio" name="a" value="si" id="sidammage" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="a" value="no" id="nodammage" required>
+                    </label>
+                        <br>
+                        <label> <b> Does the contractor provide paint?: </b></label>
+                        <label>Yes
+                        <input type="radio" name="b" value="si" id="sidammage" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="b" value="no" id="nodammage">
+                    </label>
+                        <br>
+                        <label> <b> Does it include the ceiling?: </b></label>
+                        <label>Yes
+                        <input type="radio" name="c" value="si" id="sidammage" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="c" value="no" id="nodammage">
+                    </label>
+                        <br>
+                        <label> <b> Are there any extras?: </b></label>
+                        <label>Yes
+                        <input type="radio" name="d" value="si" id="siextras" onchange="extras()" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="d" value="no" id="noextras" onchange="extras()">
+                    </label>
+                        <br>
+                        <div id="explianExtras"></div>
+                        <br>
+                        <label><b> Number of coats: </b>
+                        <input type="number" name="e" value="si" placeholder="3" required>
+                    </label>
+                        <br>
+                        <label> <b>Change of color?: </b></label>
+                        <label>Yes
+                        <input type="radio" name="f" value="si" required>
+                    </label>
+                        <label>No
+                        <input type="radio" name="f" value="no">
+                    </label>
+                        <br>
+                        <label>Description:
+                        <br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                        <br>
+                        <div class="mb-3">
+                            <label for="222" class="form-label">Please enter an approximate (in dolars)</label>
+                            <input type="number" name="" id="222" required placeholder="2500">
+                        </div>
+                        <a class="btn btn-info">Next</a>
+                        <a class="btn btn-success" type="submit">Save</a>
+                    </form>
+                </div>
+                <div id="2" class="tab-pane fade text-center">
+                    <h3>FLOORING</h3>
+                    <label for="dammage">Water dammage?</label>
+                    <label>Yes
+                    <input type="radio" name="dammage" value="si" id="sidammages" onchange="dama()" required>
+                </label>
+                    <label>No
+                    <input type="radio" name="dammage" value="no" id="nodammages" onchange="dama()">
+                </label>
+                    <br>
+                    <div id="visibl"></div>
+                    <label><b>Total square footage: </b>
+                        <input type="number" name="" id="" required placeholder="2500">
+                        <br>
+                        <label> <b> In what part of the unit / common area is the floor going to be worked? </b></label>
+                        <br>
+                        <label>All 
+                            <input type="radio" name="a" value="si" id="all" onchange="specify()" required>
+                        </label>
+                        <label>Only on
+                            <input type="radio" name="a" value="no" id="only" onchange="specify()">
+                        </label>
+                        <div id="where"></div>
+                        <label><b>Type of existing floor: </b>
+                            <br>
+                            <label><input type="checkbox">Engineer</label>
+                            <label><input type="checkbox">Parquet</label>
+                            <label><input type="checkbox">VCT Tile</label>
+                            <label><input type="checkbox">Wood</label>
+                            <label><input type="checkbox">Vinyl</label>
+                            <label><input type="checkbox">Ceramics</label>
+                        </label>
+                        <br>
+                        <label><b>Type of floor to install: </b>
+                        <br>
+                            <label><input type="checkbox">Engineer</label>
+                            <label><input type="checkbox">Parquet</label>
+                            <label><input type="checkbox">VCT Tile</label>
+                            <label><input type="checkbox">Wood</label>
+                            <label><input type="checkbox">Vinyl</label>
+                            <label><input type="checkbox">Ceramics</label>
+                            <label><input type="checkbox" onchange="who()" id="other">Other</label>
+                            <div id="whos"></div>
+                        </label>
+                        <div class="mb-3">
+                            <br>
+                            <label><b>Type of job: </b>
+                                <br>
+                                <label><input type="checkbox">Flooring demolation</label>
+                                <label><input type="checkbox">Instalation</label>
+                                <label><input type="checkbox">Repair</label>
+                                <label><input type="checkbox">Overlay</label>
+                                <label><input type="checkbox" onchange="job()" id="other_job">Other</label>
+                            </label>
+                            <div id="job"></div>
+                            <label> <b> Molding?</b></label>
+                        <label>Yes 
+                            <input type="radio" name="a" value="si" id="yes_mold" onchange="molding()" required>
+                        </label>
+                        <label>No
+                            <input type="radio" name="a" value="no" id="no" onchange="molding()">
+                        </label>
+                        <div id="mold"></div>
+                        <div id="type_mold"></div>
+                        <label>Description:
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </label>
+                        <br>
+                        <label for="333" class="form-label">Please enter an approximate</label>
+                        <input type="number" name="" id="333" required placeholder="2500 dolars">
+                        <br>
+                        <br>
+                        <a class="btn btn-info">Next</a>
+                        <a class="btn btn-success" type="submit">Save</a>
+                    </div>
+                </div>
+                <div id="3" class="tab-pane fade">
+                    <h3>Cleaning</h3>
+                    <div class="mb-3">
+                        <label for="333" class="form-label">Please enter an approximate</label>
+                        <input type="number" name="" id="333" required placeholder="2500 dolars">
+                    </div>
+                </div>
+                <div id="4" class="tab-pane fade text-center">
+                    <h3>Handyman</h3>
+                    <div class="mb-3">
+                        <label>Request description
+                            <br> <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        </label>
+                        <br>
+                        <label for="333" class="form-label">Please enter an approximate</label>
+                        <input type="number" name="" id="333" required placeholder="2500 dolars">
+                    </div>
+                    <br>
+                    <a class="btn btn-info">Next</a>
+                    <a class="btn btn-success" type="submit">Save</a>
+                </div>
+                <div id="5" class="tab-pane fade">
+                    <h3>Please, select the files</h3>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Photos</label>
+                        <input class="form-control" type="file" id="formFile" multiple>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Videos</label>
+                        <input class="form-control" type="file" id="formFile" multiple>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success">Save proposal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="funciones.js"></script>
+
+</html>
