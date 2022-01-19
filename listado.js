@@ -8,7 +8,7 @@ function confirmar() {
     })
 
     swalWithBootstrapButtons.fire({
-        title: 'Do you want delete this proposals?',
+        title: 'Do you want delete this item?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Yes',
@@ -17,7 +17,7 @@ function confirmar() {
     }).then((result) => {
         if (result.isConfirmed) {
             swalWithBootstrapButtons.fire(
-                'This proposals has been deleted!',
+                'This item has been deleted!',
             )
            
 
@@ -40,7 +40,7 @@ function prioridad() {
         mensaje.innerHTML = "Priority assigned";
     } else {
         div_1.style.backgroundColor = "rgb(140, 235, 163)";
-        mensaje.innerHTML = "Prioritize this proposals?";
+        mensaje.innerHTML = "Prioritize this item?";
     }
 }
 
@@ -54,7 +54,7 @@ function prioridad2() {
         mensaje.innerHTML = "Priority assigned";
     } else {
         div_2.style.backgroundColor = "rgb(214, 139, 139)";
-        mensaje.innerHTML = "Prioritize this proposals?";
+        mensaje.innerHTML = "Prioritize this item?";
     }
 }
 
