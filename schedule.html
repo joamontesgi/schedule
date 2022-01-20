@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <header>
 </header>
@@ -22,151 +25,239 @@
 
 <body>
     <div class="text-center container">
+        <h1>BuildCare Schedule Module</h1>
         <br>
         <a href="data.html" class="btn btn-success -sm">See work orders </a>
         <div class="row">
             <div class="col">
-              <h2>Work order 123456	</h2>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
+                <h2>Work order 123456 </h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
                         <label for="inputEmail4">Shipping Address:</label>
                         <br>
-                            <span>Brownstone o the Chelsea</span>
-                      </div>
-                      <div class="form-group col-md-6">
+                        <span>Brownstone o the Chelsea</span>
+                    </div>
+                    <div class="form-group col-md-6">
                         <label for="inputPassword4">Unit number</label>
                         <br>
                         <span>APT 101</span>
-                      </div>
                     </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputAddress">Number of beedrooms or area:</label>
-                      <span>Kitchen</span>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">State:</label>
-                      <br>
-                      <span>Unit</span>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Work specifications:</label>
-                      <br>
-                          <b>Painting</b> <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa provident odit, sequi eligendi iure possimus, sed sapiente laboriosam voluptate animi facere! Quia reprehenderit ullam rerum ut quidem aliquid dolorem.
-                          </p>
-                      <b>Flooring</b> <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa provident odit, sequi eligendi iure possimus, sed sapiente laboriosam voluptate animi facere! Quia reprehenderit ullam rerum ut quidem aliquid dolorem.
-                      </p>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Phone Number:</label>
-                      <br>
-                          <span>+1 (856) 495-2729 </span>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Person in charge of the property:</label>
-                      <br>
-                          <span>Terrance</span>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Does the contractor provide materiales?:</label>
-                      <br>
-                          <span>Yes</span>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Please, select a date to asign:</label>
-                      <br>
-                         <input type="date" name="" id="a" onfocusout="fecha()">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Please, select an hour:</label>
-                      <br>
-                         <input type="time" name="" id="a" onfocusout="fecha()">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">How many workers do you need?:</label>
-                      <br>
-                    <input type="number" name="" id="" class="form-control" placeholder="1" min="1">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Please, select a worker(s):</label>
-                      <br>
-                      <select class="form-select">
-                        <option selected>Please, select an option</option>
-                        <option>Oliver Miller</option>
-                        <option>William Smith</option>
-                        <option>Lucas Brown</option>
-                      </select>
-                    </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Photos</label>
-                        <br>
-                        <div class="text-center">
-                          <img src="descarga.jfif" class="rounded" alt="...">
-                        </div>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Photos</label>
-                        <br>
-                        <div class="text-center">
-                          <img src="damage.jfif" class="rounded" alt="...">
-                        </div>
-                      </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Number of beedrooms or area:</label>
+                    <span>Kitchen</span>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Unit status:</label>
+                    <br>
+                    <span>Unit</span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Work specifications:</label>
+                    <br>
+                    <b>Painting</b>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa provident odit, sequi eligendi iure possimus, sed sapiente laboriosam voluptate animi facere! Quia reprehenderit ullam rerum ut quidem aliquid dolorem.
+                    </p>
+                    <b>Flooring</b>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa provident odit, sequi eligendi iure possimus, sed sapiente laboriosam voluptate animi facere! Quia reprehenderit ullam rerum ut quidem aliquid dolorem.
+                    </p>
+                    <a class="btn btn-primary text-white mt-4" data-toggle="modal" data-target="#myModal">See photos</a>
+                    <br>
+                    <br>
+                    <label for="inputEmail4">Email:</label>
+                    <span>email@example.com</span>
+                    <br>
+                    <label for="inputEmail4">Generated by:</label>
+                    <span>Proposals</span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Phone Number:</label>
+                    <br>
+                    <span>+1 (856) 495-2729 </span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Person in charge of the property:</label>
+                    <br>
+                    <span>Terrance</span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Does the contractor provide materiales?:</label>
+                    <br>
+                    <span>Yes</span>
+                </div>
 
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Please, select a date to asign:</label>
+                    <br>
+                    <input type="date" name="" onchange="fecha()">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Please, select an hour:</label>
+                    <br>
+                    <input type="time" name="" onchange="fecha()">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">How many workers do you need?:</label>
+                    <br>
+                    <input type="number" name="" id="workers" onfocusout="myfunction()" class="form-control" placeholder="1" min="1">
+                </div>
+                <div id="workers_div"></div>
 
             </div>
-        
-            <div class="col">
+
+
+            <div class="col" id="listado_empleados" style="display:none;">
                 <h2>Workers</h2>
-                <div class="accordion draggable" id="accordionExample">
-                  <div class="accordion-item draggable">
-                    <h2 class="accordion-header draggable" id="headingOne">
-                      <button class="accordion-button draggable " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5 class="draggable">Oliver Miller</h5>
+                <input class="form-control" type="text" placeholder="Search a workers" aria-label="Search">
+                <br>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header draggable" id="headingOne">
+                            <button draggable="true" style="cursor: move" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5 >Oliver Miller</h5>
                       </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?
-                        </p>
-                        <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?
-                        </p> 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h5 class="draggable">William Smith	</h5>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?
-                        </p>                     
-                        <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?
-                        </p>                     
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item draggable">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h5 class="draggable">Lucas Brown</h5>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?</p>
-                          <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae obcaecati, laborum eum quo?
-                          </p> 
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?
+                                </p>
+                                <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?
+                                </p>
+                                <div class="text-justify">
+                                    <p><b>Where are you favorite?: </b></p>
+                                    <u>
+                                      <li>Brownstone</li>
+                                      <li>Chelsea</li>
+                                      <li>Bayside</li>
+                                    </u>
+                                </div>
+                                <div class="text-justify mt-4">
+                                    <p><b>Where do you need to improve?: </b></p>
+                                    <u>
+                                      <li>Kitchen</li>
+                                      <li>Bathroom</li>
+                                      <li>Living room</li>
+                                    </u>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button draggable="true" style="cursor: move" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5 class="draggable">William Smith	</h5>
+                      </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?
+                                </p>
+                                <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?
+                                </p>
+                                <div class="text-justify">
+                                    <p><b>Where are you favorite?: </b></p>
+                                    <u>
+                                    <li>Brownstone</li>
+                                    <li>Chelsea</li>
+                                    <li>Bayside</li>
+                                  </u>
+                                </div>
+                                <div class="text-justify mt-4">
+                                    <p><b>Where do you need to improve?: </b></p>
+                                    <u>
+                                      <li>Kitchen</li>
+                                      <li>Bathroom</li>
+                                      <li>Living room</li>                                   
+                                  </u>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item draggable">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button draggable="true" style="cursor: move" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="draggable">Lucas Brown</h5>
+                      </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-justify"><b>Experience: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?</p>
+                                <p class="text-justify"><b>Specialty: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus id quisquam cumque aperiam voluptas laboriosam! Adipisci asperiores suscipit, odit soluta voluptates hic? Rem similique recusandae
+                                    obcaecati, laborum eum quo?
+                                </p>
+                                <div class="text-justify">
+                                    <p><b>Where are you favorite?: </b></p>
+                                    <u>
+                                  <li>Brownstone</li>
+                                  <li>Chelsea</li>
+                                  <li>Bayside</li>
+                                </u>
+                                </div>
+                                <div class="text-justify mt-4">
+                                    <p><b>Where do you need to improve?: </b></p>
+                                    <u>
+                                    <li>Kitchen</li>
+                                    <li>Bathroom</li>
+                                    <li>Living room</li>                                   
+                                </u>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <button type="submit" class="btn btn-success mt-4" id="send" onclick="sendAlert()">Save and send</button>
     </div>
 
+    <br>
+    <br>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">1</label>
+                        <br>
+                        <div class="text-center">
+                            <img src="damage.jfif" style="width: 180px; height: 180px;" class="rounded" alt="...">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">2</label>
+                        <br>
+                        <div class="text-center">
+                            <img src="descarga.jfif" style="width: 180px; height: 180px;" class="rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
+<footer>
+    <div class="p-3 mb-2  text-white" style="background-color: #70C3DD;">
+        <img src="full-logo.png" alt="">
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

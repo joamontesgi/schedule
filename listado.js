@@ -19,7 +19,7 @@ function confirmar() {
             swalWithBootstrapButtons.fire(
                 'This item has been deleted!',
             )
-           
+
 
         } else if (
             result.dismiss === Swal.DismissReason.cancel
@@ -70,10 +70,24 @@ function prioridad3() {
         mensaje.innerHTML = "Prioritize this proposals?";
     }
 }
+
 function prioridad4() {
     let si_prioridad = document.getElementById('prioridad4');
-    let div_4= document.getElementById('div_4');
+    let div_4 = document.getElementById('div_4');
     let mensaje = document.getElementById('mensaje4');
+    if (si_prioridad.checked) {
+        div_4.style.backgroundColor = "#F3E975";
+        mensaje.innerHTML = "Priority assigned";
+    } else {
+        div_4.style.backgroundColor = "rgb(140, 235, 163)";
+        mensaje.innerHTML = "Prioritize this proposals?";
+    }
+}
+
+function prioridad4() {
+    let si_prioridad = document.getElementById('prioridad5');
+    let div_4 = document.getElementById('div_5');
+    let mensaje = document.getElementById('mensaje5');
     if (si_prioridad.checked) {
         div_4.style.backgroundColor = "#F3E975";
         mensaje.innerHTML = "Priority assigned";
